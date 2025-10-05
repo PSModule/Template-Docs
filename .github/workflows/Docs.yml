@@ -41,7 +41,7 @@ jobs:
         run: |
           mkdocs build --config-file ./mkdocs.yml --strict --site-dir _site/
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
 
   deploy:
     needs: build
